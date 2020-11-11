@@ -58,7 +58,19 @@ Pour récuperer cette valeur, on créer une variable:
 - fonction pour doubler les nombres d'un tableau :
 
       function doublerTableau(tab) {
-        for(let i=0;i<tab.lenght;i++) {    --> parcourir tout les éléments du tableau;avance selon la longueur du tableau;on augmente de 1 à chaque passage.
-          tab[i] = tab[i]*2                     
-        }                                       
+        for(let i=0;i<tab.lenght;i++) {    --> parcourir tout les éléments du tableau; i avance selon la longueur du tableau;on incrémente de 1 à chaque passage.
+          tab[i] = tab[i]*2                --> tab à l'indice i, on va changer sa valeur : sa valeur actuel * 2 et la remettre à sa place.        
+        }
+        return tab                          --> renvois le tableau modifié              
       }
+      
+      const result = doublerTableau([2, 8, 43])     --> créer une var contenant la fonction et le tableau avec ces diff valeurs. 
+      consol.log(result)                            --> résultat: [4, 16, 86]
+
+On peut aussi réutiliser une fonction pour cette opération pour le même résultat: 
+   (plus on doit changer des choses (textes/nombres...) dans notre code, plus il sera simple de faire des évolutions en réutilisant des fonctions déjà écrite. )     
+        -la fonction doubler:  function doublerTableau(tab) {
+                                  for (let i= 0; i < tab.lenght; i++) {
+                                      tab[i] = doubler(tab[i])
+                                    }
+                                  }
