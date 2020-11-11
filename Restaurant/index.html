@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">t
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant le Css</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <nav>
+    <div id="logo">
+      <div class="cercle">
+        <img class="logo" src="./pictures/logo.png" alt="logo">
+      </div>
+      <h1>Restaurant le CSS</h1>
+    </div>
+    <ul>
+      <li><a href="#">Acceuil</a></li>
+      <li><a href="#philos">Notre Philosophie</a></li>
+      <li><a href="#cartes">La Carte</a></li>
+      <li><a href="#infos">Infos Pratiques</a></li>
+    </ul>
+  </nav>
+  <header>
+    <div class="gris">
+      <h2>Bienvenue au restaurant !</h2>
+    </div>
+  </header>
+  <section id="philo">
+    <a name="philos" class="anchor"></a>
+    <div class="chef">
+      <img src="./pictures/chef.png" alt="photo chef">
+    </div>
+    <div class="text">
+      <h3 class="titrephilo">Notre Philosophie</h3>
+      <p>Restaurant basé sur des préparations mettant en avant des produits de qualité.<br>
+        Principalement axé sur les viandes grillées au feu de bois en salle.<br>
+        Depuis 30 ans, sous la même direction, nous avons dédié le Grillardin à la convivialité et à une méthode de
+        cuisson traditionnelle.<br>
+        Nous travaillons depuis 29 ans avec le même boucher.
+        Sa régularité dans la qualité de la viande n'est plus à démontrer.<br>
+        Nous sommes un des derniers restaurants à vous proposer ce mode de cuisson au feu de bois.<br>
+        Celui-ci étant sélectionné avec le plus grand soin afin d'apporter une saveur et la chaleur adéquate à la
+        cuisson de plus de dix préparations différentes.<br>
+        Nous apportons une énorme attention aux sauces qui si vous le désirez accompagneront vos viandes.<br>
+        Afin de satisfaire le plus grand nombre de nos clients, nous proposons un grand choix de plats et de suggestions
+        qui satisferont les amateurs d'autres saveurs que la viande.</p>
+    </div>
+  </section>
+  <section id="carte">
+    <a name="cartes" class="anchor"></a>
+    <h3>La Carte</h3>
+    <div class="menu">
+      <h4>Notre menu du midi à 19€</h4>
+      <p>Escalope de veau milanese avec sa sauce de cannard</p>
+      <hr>
+      <p>Salade de foie gras accompagné de sa salade du jour </p>
+      <hr>
+      <p>Crèpes flambées au grand marnier</p>
+    </div>
+    <div class="menu">
+      <h4>Notre menu du midi à 27€</h4>
+      <p>Escalope de veau milanese avec sa sauce de cannard</p>
+      <hr>
+      <p>Salade de foie gras accompagné de sa salade du jour </p>
+      <hr>
+      <p>Crèpes flambées au grand marnier</p>
+    </div>
+  </section>
+  <div class="salade"></div>
+  <section id="info">
+    <a name="infos" class="anchor"></a>
+    <h3>Infos Pratiques</h3>
+    <div class="container">
+    <div class="horaire">
+      <h4>Horaires d'ouvertures</h4>
+      <hr>
+      <p><span>Du lundi au jeudi :</span>
+      12h00 - 14h30 et 19h00 - 22h30</p>
+      <p><span>Du vendredi au samedi :</span>
+      12h00 - 14h30 et 19h00 - 23h00</p>
+      <p><span>Du dimanche :</span>
+      11h30 - 14h30 et 19h00 - 22h30</p>
+    </div>
+    <div class="adresse">
+      <h4>Adresse :</h4>
+      <hr>
+      <p>Notre adresse est le 1 rue du restaurant 1060 Bruxelles <br>
+        Trouvez votre itinéraire sur cette carte :</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.531593377651!2d4.39774041641715!3d50.839839579531144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4aebe90f979%3A0xf0978d9ba7e034b2!2sRue%20des%20Tongres%2C%201040%20Etterbeek!5e0!3m2!1sfr!2sbe!4v1602075822219!5m2!1sfr!2sbe"
+        width="500" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h4>Nous contacter</h4>
+    <form action="" method="get">
+    <label for="name">Votre nom :</label>
+    <input type="text" name="name" class="inputname">
+    <label for="email">Votre email :</label>
+    <input type="email" name="email" class="inputemail">
+    <label for="text">Votre message :</label>
+    <textarea name="text" cols="20" rows="10" class="textarea"></textarea>
+    <input type="submit" value="Envoyer" class="button">
+    </form>
+  </section>
+  <footer>
+    <p> © 2020 - Restaurant le CSS - Tout droit réservés</p>
+  </footer>
+</body>
+
+</html>

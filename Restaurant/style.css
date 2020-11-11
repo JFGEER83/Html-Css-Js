@@ -1,0 +1,273 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family: Arial,
+  Helvetica,
+  sans-serif;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+ul,li{
+  list-style: none;
+  font-size: 1.8rem;
+}
+/*nav*/
+#logo{
+  display: flex;
+  color: white;
+  flex: 1 1 40rem;
+  margin-left: 20px;
+  align-items: center;
+}
+#logo h1{
+  font-size: 2.2rem;
+  margin-left: 20px;
+  font-weight: lighter;
+}
+.cercle{
+  background-color: white;
+  border-radius: 100%;
+  border: none;
+  width: 60px;
+  height: 60px;
+}
+.logo{
+  width: 60px;
+  height: 60px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #94bdce;
+  width: 100vw;
+  position: fixed;
+  height: 10vh;
+}
+nav ul{
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1 1 40rem;
+}
+/*HEADER*/
+header{
+  background-image: url(./pictures/resto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gris{
+  background-color: rgba(54, 51, 51, 0.596);
+  width: 500px;
+  height: 50px;
+}
+.gris h2{
+  font-size: 3rem;
+  margin: 0 auto;
+  color: white;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 15px;
+}
+/*SECTION PHILO*/
+.titrephilo{
+  font-size: 2.5rem;
+  color: #94bdce;
+  
+  margin-bottom: 25px;
+}
+.chef img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#philo{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.chef{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 1 10rem;
+  margin-right: 60px;
+}
+.text{
+  flex: 1 1 40rem;
+  align-self: center;
+  margin-right: 100px;
+}
+.text p{
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+/*CARTE*/
+#carte{
+  background-color: rgba(226, 224, 222, 0.74);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding: 10px;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+#carte h3{
+  margin-top: 40px;
+  font-size: 2.5rem;
+  color: #94bdce;
+  padding: 20px;
+}
+.menu h4{
+  font-size: 1.8rem;
+  padding: 10px;
+}
+.menu p{
+  font-size: 1.2rem;
+  line-height: 40px;
+}
+.menu hr{
+  width: 120px;
+  border: none;
+  border-top: 1px solid #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+.salade{
+  background-image: url(./pictures/salad.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+}
+/*INFO PRATIQUE*/
+#info{
+  margin: 40px;
+}
+#info h3{
+  font-size: 2.4rem;
+  color: #94bdce;
+  text-align: center;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+.horaire{
+  padding: 1rem;
+  line-height: 50px;
+}
+.horaire h4{
+  font-size: 1.6rem;
+}
+.horaire span{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.horaire p{
+  font-size: 1.3rem;
+}
+.horaire hr{
+  width: 70px;
+  border: none;
+  border-top: 4px solid #94bdce;
+  color: #94bdce;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+.adresse{
+  padding: 1rem;
+  line-height: 50px;
+  margin-left: 20px;
+}
+.adresse hr {
+  width: 70px;
+  border: none;
+  border-top: 4px solid #94bdce;
+  color: #94bdce;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+.adresse h4 {
+  font-size: 1.6rem;
+}
+.adresse p {
+  font-size: 1.3rem;
+}
+/*CONTACT*/
+#contact{
+  background-color: rgba(226, 224, 222, 0.74);
+
+}
+#contact h4{
+  font-size: 2.4rem;
+  color: #94bdce;
+  text-align: center;
+  padding: 4rem;
+}
+form{
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+.inputname, .inputemail, .textarea{
+  border: none;
+}
+.inputname,
+.inputemail{
+  height: 20px;
+}
+label{
+  font-size: 1.2rem;
+}
+.button{
+  background-color: #94bdce;
+  color: white;
+  border: none;
+  width : 100px;
+  padding: 1rem;
+  margin-top: 20px;
+  align-self: center;
+  margin-bottom: 30px;
+}
+/*FOOTER*/
+footer{
+  background-color: #94bdce;
+  color: white;
+}
+footer p{
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.3rem;
+}
+/*ANCHOR*/
+.anchor{
+  content:"";
+  display: block;
+  height: 170px;
+  margin: -170px 0 0;
+}
