@@ -28,7 +28,7 @@ ajouter un argument:
 
 Si l'on change dans la fonction le "Bonjour"  par "Salut", les différents résultats appelés seront immédiatement changé.
 
--personne majeur :
+-fonction pour savoir si une personne est majeur ou non:
 
         function isMajeur(age) {
           if(age >= 18) {                 opp ternaire : return age >= 18 ? true : false
@@ -46,3 +46,19 @@ Pour récuperer cette valeur, on créer une variable:
 
         const isMaj = isMajeur(30)  --> en appelant isMajeur avec 30, il a calculer pour savoir si c'était vrai ou faux.
         console.log(isMaj)           --> le résultat est true.
+
+- fonction pour doubler un nombre:
+
+      function doubler(nombre) {     --> on met en argument nombre (vu qu'on veut calculer des nobmres)
+        return nombre * 2                 et on multiplie l'argulment par 2 (ex) 
+      }    
+
+      console.log(doubler(12))        --> on appelle la fonction(argument = 12) = 24 (résultat) 
+
+- fonction pour doubler les nombres d'un tableau :
+
+      function doublerTableau(tab) {
+        for(let i=0;i<tab.lenght;i++) {    --> parcourir tout les éléments du tableau;avance selon la longueur du tableau;on augmente de 1 à chaque passage.
+          tab[i] = tab[i]*2                     
+        }                                       
+      }
