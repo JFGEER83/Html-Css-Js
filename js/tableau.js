@@ -1,4 +1,4 @@
-/* Tableau (aray): donner un essembe de valeur à une var.
+/* Tableau (aray): donner un ensemble de valeur à une var.
 const tableau : ["element1", "element2", "element3", "element4", 4, 6.2, true, null ]
           Pour créer un tableau, on déclare une var et on insert les diff valeurs entre [],
           On peut mettre toutes sortes de valeurs dans un tableau : "string", number, booléan, null.

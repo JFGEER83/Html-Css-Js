@@ -74,3 +74,4 @@ On peut aussi réutiliser une fonction pour cette opération pour le même résu
                                       tab[i] = doubler(tab[i])
                                     }
                                   }
+*/                                  
